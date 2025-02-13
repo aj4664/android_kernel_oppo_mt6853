@@ -86,11 +86,11 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: perm00内核-卡刷包
-        path: kernel_workspace/AnyKernel3/*
+        path: kernel_workspace/AnyKernel3
 
 
     - name: 上传编译内核
       uses: actions/upload-artifact@v4
       with:
         name: perm00内核
-        path: kernel_workspace/android-kernel/kernel-4.14/out/arch/arm64/boot/Image.gz-dtb
+        path: kernel_workspace/android-kernel/kernel-4.14/out/arch/arm64/boot/*
